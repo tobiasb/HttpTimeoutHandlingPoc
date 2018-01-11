@@ -15,3 +15,19 @@ java -cp target/HttpTimeoutHandlingPoc-1.0-SNAPSHOT-jar-with-dependencies.jar co
 #(in separate console) start client making requests to webhook
 java -cp target/HttpTimeoutHandlingPoc-1.0-SNAPSHOT-jar-with-dependencies.jar com.test.client.Client
 ```
+
+### Output
+
+#### Client
+```
+The request succeeded with status 200
+The request timed out
+```
+
+#### Server
+```
+Sleep duration: 100
+Sending the response succeeded
+Sleep duration: 1000
+Sending the response failed
+```
