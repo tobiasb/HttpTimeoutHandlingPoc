@@ -6,7 +6,12 @@ Quick poc to better understand how intentionally timing out http requests affect
 
 ## Usage
 ```
+#build jar
 mvn package
+
+#start webhook server
 java -cp target/HttpTimeoutHandlingPoc-1.0-SNAPSHOT-jar-with-dependencies.jar com.test.server.WebhookServer
+
+#(in separate console) start client making requests to webhook
 java -cp target/HttpTimeoutHandlingPoc-1.0-SNAPSHOT-jar-with-dependencies.jar com.test.client.Client
 ```
